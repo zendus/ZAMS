@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin-bottom: 60px;
+  text-align: center;
+  background: rgba(0, 21, 61, 0.767);
+  padding: 20px;
+  color: white;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.wrapper {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  width: 45%;
+}
+
+input {
+  font-size: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  box-shadow: 0px 2px 29px -16px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  width: 100%;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+  color: black;
+}
+
+#submit_button {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  background: rgba(0, 21, 61, 0.767);
+  cursor: pointer;
+  color: rgb(246, 255, 246);
+}
+
+form {
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  padding: 30px;
+  box-shadow: 0px 2px 29px -16px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.videostream{
+  margin-top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.356);
+  box-shadow: 0px 2px 29px -16px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 30px;
+}

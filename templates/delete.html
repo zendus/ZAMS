@@ -1,0 +1,14 @@
+{% extends "baseform.html" %} {% block content %}
+
+<div class="jumbotron">
+  <h1>
+    Enter the Student Regnumber to delete from ZAMS Database
+  </h1>
+  <br />
+  <form method="POST">
+    {{form.hidden_tag()}} {{form.regnumber.label}} {{form.regnumber}}
+    {{form.submit}}
+  </form>
+</div>
+
+{% endblock %}

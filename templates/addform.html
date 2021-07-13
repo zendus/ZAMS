@@ -1,0 +1,37 @@
+{% extends "baseform.html" %} {% block content %}
+
+<div class="jumbotron">
+  <h1>Dear Student, Please fill in your details</h1>
+  <form method="POST">
+    {{form.hidden_tag()}} {{form.regnumber.label}} <br />
+    {{form.regnumber()}} {% if form.regnumber.errors %}
+    <ul class="errors">
+      {% for error in form.regnumber.errors %}
+      <li>{{ error }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <br />
+    {{form.firstname.label}} <br />
+    {{form.firstname()}}
+    <br />
+    {{form.lastname.label}} <br />
+    {{form.lastname()}}
+    <br />
+    {{form.level.label}} <br />
+    {{form.level()}} {% if form.level.errors %}
+    <ul class="errors">
+      {% for error in form.level.errors %}
+      <li>{{ error }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+    <br />
+    {{form.department.label}} <br />
+    {{form.department()}} <br />
+    <br />
+    {{form.submit()}}
+  </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZAMS LIVE</title>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ZAMS Livestream Attendance</h1>
+    </header>
+    <h2>Welcome {{ name }} !</h2>
+    <div class="videostream">
+      <img src="{{ url_for('video_feed') }}" />
+    </div>
+
+    <form
+    action="{{ url_for('shut_down_nwanne') }}"
+    method="POST">
+    <input
+    type="submit"
+    value="End Livestream for {{ course }}"
+    id="submit_button"
+    />
+  </form>
+
+
+  </body>
+</html>

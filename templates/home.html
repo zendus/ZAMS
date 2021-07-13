@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../static/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ZENDUS ATTENDANCE MANAGEMENT SYSTEM</h1>
+    </header>
+    <div class="wrapper">
+      <form
+        action="{{ url_for('register') }}"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <div id="first_form_line">
+          <label for="lecturer_name"> Name </label>
+          <input
+            type="text"
+            name="lecturer_name"
+            id="lecturer_name"
+            placeholder="enter your full name"
+          />
+        </div>
+        <br />
+        <div id="second_form_line">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="enter email address"
+          />
+        </div>
+        <br />
+        <div id="third_form_line">
+          <label for="course_code">Course</label>
+          <input
+            type="text"
+            name="course_code"
+            id="course_code"
+            placeholder="enter the course code"
+          />
+        </div>
+        <br />
+
+        <input type="submit" value="Start Livestream" id="submit_button" />
+      </form>
+    </div>
+  </body>
+</html>
