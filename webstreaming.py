@@ -7,8 +7,6 @@ from flask import render_template
 from runapp import app
 import threading
 import werkzeug
-import argparse
-import datetime
 import pickle
 import imutils
 import time

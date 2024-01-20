@@ -10,7 +10,6 @@ from email.mime.application import MIMEApplication
 from sqldb import db, Student_details
 
     
-
 #create spreadsheet
 def create_spreadsheet(predicted_names, course_handler_email, lect):
     Id = 0

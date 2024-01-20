@@ -1,36 +1,3 @@
-# import os
-# from flask_sqlalchemy import SQLAlchemy
-# from run import app
-
-# basedir = os.path.abspath(os.path.dirname(__file__))
-
-# # app = Flask(__name__)
-# app.config['SQLALCHEMY_DATABASE_URI'] ='sqlite:///' + os.path.join(basedir, 'data.sqlite')
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-# db = SQLAlchemy(app)
-
-# #creating model aka table
-# class Student_details(db.Model):
-
-#     __tablename__ = 'students'
-
-#     regnumber = db.Column(db.Text, primary_key=True)
-#     firstname = db.Column(db.Text)
-#     lastname = db.Column(db.Text)
-#     level = db.Column(db.Integer)
-#     department = db.Column(db.Text)
-
-#     def __init__(self, regnumber, firstname, lastname, level, department):
-#         self.regnumber = regnumber
-#         self.firstname = firstname
-#         self.lastname = lastname
-#         self.level = level
-#         self.department = department
-
-#     def __repr__(self):
-#         return f"{self.regnumber}, {self.firstname}, {self.lastname}, {self.level}, {self.department}"
-
 import os
 from flask import render_template, url_for, redirect, flash
 from runapp import app

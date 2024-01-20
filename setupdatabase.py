@@ -14,3 +14,4 @@ db.session.add_all([user_ezinne, user_johnmicheal, user_uche])
 db.session.commit()
 
 print(user_johnmicheal.regnumber)
+
